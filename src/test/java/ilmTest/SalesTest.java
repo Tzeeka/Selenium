@@ -2,6 +2,7 @@ package ilmTest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.List;
 
@@ -12,7 +13,8 @@ public class SalesTest extends baseTest {
         driver.get("https://ilovemum.ru/catalog/special_filter/SPECIALOFFER/");
         List<WebElement> elements = driver.findElements(By.cssSelector("div.catalog__img"));
         for(WebElement el : elements){
-            System.out.println(el.findElement(By.cssSelector("li.catalog__stock-item.catalog__stock-item--SPECIALOFFER")).getText());
+         WebElement sale =  el.findElement(By.cssSelector("li.catalog__stock-item.catalog__stock-item--SPECIALOFFER"));
+            Assert.assertEquals(sale.getText(), "Скидка");
         }
     }
 }
