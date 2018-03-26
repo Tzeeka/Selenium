@@ -13,10 +13,11 @@ public class baseTest {
     WebDriver driver;
     WebDriverWait wait;
     ChromeOptions options = new ChromeOptions();
-    @BeforeTest
+
+    @BeforeTest //пока не передаем никакие аргументы запуска хрому
     public void start() {
         options.addArguments("start-maximized");
-        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 10);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 

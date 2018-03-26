@@ -7,8 +7,8 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class SalesTest extends baseTest {
-    //Проверяем наличие значка "Скидка" у всех товаров на странице
-    @Test
+
+    @Test //Проверяем наличие значка "Скидка" у всех товаров на странице
     public void testIlm() {
         driver.get("https://ilovemum.ru/catalog/special_filter/SPECIALOFFER/");
         List<WebElement> elements = driver.findElements(By.cssSelector("div.catalog__img"));
