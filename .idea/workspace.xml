@@ -524,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522060672034</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Изменил модификатор доступа полей класса baseTest на дефолтный.">
+      <created>1522060732521</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1522060732521</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -643,7 +650,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавлен assertEquals, проверяющий есть ли пометка &quot;Скидка&quot; на карточке товаров." />
     <MESSAGE value="Новый тест по сравнению цены в каталоге и карточке товара" />
-    <option name="LAST_COMMIT_MESSAGE" value="Новый тест по сравнению цены в каталоге и карточке товара" />
+    <MESSAGE value="Изменил модификатор доступа полей класса baseTest на дефолтный." />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменил модификатор доступа полей класса baseTest на дефолтный." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
