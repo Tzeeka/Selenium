@@ -24,7 +24,7 @@ public class baseTest {
 
     @AfterTest
     public void stop() {
-       /* driver.quit();
-        driver = null;*/
+        driver.quit();
+        driver = null;
     }
 }
