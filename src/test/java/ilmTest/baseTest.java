@@ -10,8 +10,8 @@ import org.testng.annotations.BeforeTest;
 import java.util.concurrent.TimeUnit;
 
 public class baseTest {
-    public WebDriver driver;
-    public WebDriverWait wait;
+    WebDriver driver;
+    WebDriverWait wait;
     ChromeOptions options = new ChromeOptions();
     @BeforeTest
     public void start() {
@@ -24,7 +24,7 @@ public class baseTest {
 
     @AfterTest
     public void stop() {
-        driver.quit();
-        driver = null;
+       /* driver.quit();
+        driver = null;*/
     }
 }
