@@ -5,10 +5,16 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class ProductTest extends baseTest {
+
 
     @Test // Задача: Проверить, что открывается правильная страница товара
     public void productStyleTest() throws InterruptedException {
+
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         driver.get("https://ilovemum.ru/");
 
         // Идём в каталог
@@ -20,7 +26,6 @@ public class ProductTest extends baseTest {
         else {
             driver.findElement(By.cssSelector("a.sidebar__link.sidebar__link--burger")).click();
             driver.findElement(By.cssSelector("a.panel-burger__link")).click();
-
         }
 
 
